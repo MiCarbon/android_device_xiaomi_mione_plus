@@ -31,7 +31,7 @@ TARGET_BOOTLOADER_BOARD_NAME := mione
 
 # Kernel
 BOARD_KERNEL_BASE := 0x40200000
-BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=mione
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=mione kgsl.mmutype=gpummu vmalloc=400M
 BOARD_KERNEL_PAGE_SIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01200000
 TARGET_KERNEL_CONFIG := mione_plus_defconfig
@@ -70,6 +70,8 @@ BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 # Recovery
 BOARD_USES_MMCUTILS := true
 BOARD_HAS_NO_SELECT_BUTTON := true
+BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
 TARGET_RECOVERY_INITRC := device/xiaomi/mione_plus/recovery/init.rc
 RECOVERY_HAS_DUALSYSTEM_PARTITIONS := true
 RECOVERY_USE_PIXEL_FORMAT_BGR565 := true
