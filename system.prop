@@ -7,6 +7,7 @@
 ro.telephony.default_network=7
 ro.cdma.home.operator.numeric=46003
 ro.cdma.factory=china
+persist.omh.enabled=true
 
 # Ril
 ro.ril.oem.nosim.ecclist=911,112,120,122,110,119
