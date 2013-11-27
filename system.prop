@@ -4,8 +4,10 @@
 
 # Default network type
 # 7 => Global
-ro.telephony.default_network=7
+telephony.lteOnCdmaDevice=0
+ril.subscription.types=NV,RUIM
 ro.cdma.home.operator.numeric=46003
+ro.telephony.default_cdma_sub=0
 ro.cdma.factory=china
 persist.omh.enabled=true
 
@@ -31,7 +33,8 @@ ro.vendor.extension_library=/system/lib/libqc-opt.so
 
 # Graphics
 debug.sf.hw=1
-debug.composition.type=gpu
+debug.egl.hw=1
+debug.composition.type=dyn
 debug.enabletr=true
 ro.sf.compbypass.enable=1
 ro.sf.lcd_density=240
