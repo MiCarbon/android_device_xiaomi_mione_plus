@@ -13,6 +13,7 @@ import init.mione.syspart_${ro.boot.syspart}.rc
 on init
     export EXTERNAL_STORAGE /storage/sdcard0
 # create mountpoints
+    chown root root /mnt/media_rw
     mkdir /mnt/media_rw/sdcard0 0700 media_rw media_rw
     mkdir /storage/sdcard0 0700 root root
 
