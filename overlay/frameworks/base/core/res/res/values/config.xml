@@ -180,4 +180,7 @@
          This is only for Xiaomi devices -->
      <!--<bool name="config_dualsystem">true</bool>-->
 
+    <!-- Disable lockscreen translucent decor by default -->
+    <bool name="config_enableLockScreenTranslucentDecor">true</bool>
+
 </resources>
