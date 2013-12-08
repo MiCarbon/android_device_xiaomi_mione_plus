@@ -48,9 +48,10 @@ PRODUCT_COPY_FILES += \
     device/xiaomi/mione_plus/ramdisk/mount_ext4.sh:/system/bin/mount_ext4.sh \
     device/xiaomi/mione_plus/ramdisk/fstab.mione:/root/fstab.mione
 
-# wifi
+# Wifi
 PRODUCT_COPY_FILES += \
-    device/xiaomi/mione_plus/configs/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
+    device/xiaomi/mione_plus/configs/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
+    device/xiaomi/mione_plus/configs/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf
 
 # Input device config
 PRODUCT_COPY_FILES += \
