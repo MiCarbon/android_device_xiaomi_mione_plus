@@ -24,12 +24,7 @@ PRODUCT_PACKAGES += \
     VisualizationWallpapers \
     PhaseBeam \
     Firewall \
-    Mms \
-    org.codeaurora.Performance \
-    org.codeaurora.Performance.xml \
-    telephony-msim
-    
-PRODUCT_BOOT_JARS += org.codeaurora.Performance:telephony-msim
+    Mms
 
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/mione_plus/device_mione_plus.mk)
